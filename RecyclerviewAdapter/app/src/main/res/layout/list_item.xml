@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/rootCardView">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgManzara"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tvManzaraBaslik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manzara"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="7dp"/>
+            <TextView
+                android:id="@+id/tvManzaraAciklama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manzara"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="7dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgSil"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="7dp"
+                app:tint="#D32F2F"
+                android:src="@drawable/ic_delete"/>
+            <ImageView
+                android:id="@+id/imgKopyala"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="7dp"
+                app:tint="#D32F2F"
+                android:src="@drawable/ic_copy"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
